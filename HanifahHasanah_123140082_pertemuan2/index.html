@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard - Hanifah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <header>
+            <h1>Personal Dashboard 👋</h1>
+            <div id="dynamic-info" class="card info-time">
+                <p>Loading informasi...</p>
+            </div>
+        </header>
+
+        <main class="content-wrapper">
+            
+            <section id="task-management" class="card task-section">
+                <h2>Daftar Tugas (To-Do List) 📝</h2>
+                
+                <form id="add-task-form">
+                    <input type="text" id="task-input" placeholder="Apa yang perlu dilakukan hari ini?" required>
+                    <button type="submit">Tambahkan</button>
+                </form>
+
+                <ul id="task-list">
+                    </ul>
+            </section>
+
+            <section id="notes" class="card notes-section">
+                <h2>Catatan Cepat 💡</h2>
+                <textarea id="quick-note" placeholder="Tulis catatan penting Anda di sini. Ini juga disimpan secara lokal!" rows="10"></textarea>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
