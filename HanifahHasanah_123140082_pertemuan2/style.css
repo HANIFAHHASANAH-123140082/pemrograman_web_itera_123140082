@@ -1,0 +1,127 @@
+/* style.css (Dashboard Styling) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #343a40;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-time {
+    font-size: 1.1em;
+    text-align: left;
+    background-color: #007bff;
+    color: white;
+    font-weight: 300;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.task-section, .notes-section {
+    flex: 1;
+}
+
+/* To-Do List Styling */
+#add-task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px 0 0 6px;
+    font-size: 1em;
+}
+
+#add-task-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-task-form button:hover {
+    background-color: #1e7e34;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#task-list li:hover {
+    background-color: #f8f9fa;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+.task-actions button {
+    background-color: #dc3545;
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 0.85em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.task-actions button:hover {
+    background-color: #c82333;
+}
+
+/* Notes Section */
+#quick-note {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+}
